@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: url('https://img.freepik.com/free-photo/calculator-money-notepad-keyboard-yellow-background-flat-lay_169016-24505.jpg?w=996&t=st=1713012219~exp=1713012819~hmac=847748fa96a12b7e9983cb74604e822ab4a85df023ba7543a90944748a902eb3');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333; /* Text color */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Text color */
+}
+
+input[type="number"] {
+    width: calc(100% - 24px); /* Adjust the width */
+    padding: 10px;
+    border: 2px solid #ddd; /* Border color */
+    border-radius: 8px; /* Border radius */
+    box-sizing: border-box;
+    background-color: #fff; /* Background color */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #4CAF50; /* Border color on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question-icon {
+    margin-left: 5px;
+    color: #777;
+    cursor: help;
+    position: relative;
+}
+
+.question-icon:hover::before {
+    content: attr(title);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+}
